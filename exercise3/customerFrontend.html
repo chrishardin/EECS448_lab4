@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Chris' Store</title>
+    <script type="text/javascript" src="formChecker.js"></script>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+  </head>
+  <body>
+    <h1>Chris' Store</h1>
+    <form onsubmit="return check()" action="customerBackend.php" method="POST">
+
+      <label>Username:</label>
+       <input type="text" name="username" id = "username"> <br>
+      <label>Password:</label>
+       <input type="text" name="pwd" id="pwd">
+
+
+      <h3>Epsom Salt Foot Gel, 4 FL OZ - $40</h3>
+      Quantity: <input type="text" id="i1"name="i1"><br>
+
+      <h3>Oral-B Floss Picks, 20 pack - $75</h3>
+      Quantity: <input type="text" id="i2"name="i2"><br>
+
+      <h3>Oxford Dictionary - $480 </h3>
+      Quantity: <input type="text" id="i3"name="i3"> <br><br>
+
+      <label> Shipping </label> <br>
+        <input type="radio" name = "shipping" id = "free" value="free">7 Day Shipping - Free</input><br>
+        <input type="radio" name = "shipping" id = "three" value="three">3 Day Shipping - $5.00</input><br>
+        <input type="radio" name = "shipping" id = "overnight" value="overnight">Overnight Shipping - $50.00</input><br>
+
+
+
+      Reset: <input type="reset" value="Reset">
+      Submit: <input type="submit" value="Submit">
+
+
+    </form>
+
+  </body>
+</html>
